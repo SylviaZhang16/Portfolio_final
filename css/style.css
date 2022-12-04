@@ -360,6 +360,7 @@ div.right img:hover,
 
 
 .contact{
+	color:black;
     position: relative;
     padding:5% 10%;
     background-color:white;
@@ -372,13 +373,14 @@ div.right img:hover,
 }
 
 .contact-form input, .message{
-    width: 100%;
+   color:black;
+	width: 100%;
     display:block;
     height: 30px;
     margin:5px 0;
   background-color: white;
     border:1px solid gray;
-    border-radius: 5px;
+    border-radius: 2px;
     outline: none;
     resize: none;
 }
