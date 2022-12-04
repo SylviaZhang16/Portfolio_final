@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="icon" href="images/favicon.ico">
+	    <link rel="stylesheet" href="css/html5reset.css">
+	    <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        
+        <title>Island Driver Apartment</title>
+    </head>
+    
+    <body>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <header>
+            <nav class="navigation">    
+                <figure class="logo"><img src="images/IslandDrivelogo.png" width="100" alt="logo"/></figure>   
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="plan.html" class="active">FLOOR PLAN</a></li>
+                    <li><a href="service(gallery).html" >SERVICES</a></li>
+                    <li><a href="application.html">APPLICATION</a> </li>
+                  </ul>
+            </nav>
+        </header>
+    
+        <main id="main">
+            <div class="containergrey">
+                <h1>Floor plans</h1>
+                <p>
+                    Every Island Drive apartment and townhouse has been uniquely designed to provide high quality interiors, spacious floor plans, with the distinctive features and amenities you are seeking in your carefree, luxurious life style.
+                </p>
+                <h3>Advantages</h3>
+                <p>
+                    Best Location, within walking distance of the University of Michigan campus, Medical Center and downtown Ann Arbor
+                    <br>AATA and U of M bus line at your doorstep
+                    <br>Inviting studio, one, two and three bedroom apartment homes
+                    <br>Heat, water and gas included
+                    <br>Ample resident and guest parking
+                    <br>Brand new fitness center
+                    <br>AND:Remodeled kitchens,Cozy plush carpeting,Window treatments,Ceiling fans,Spacious closets
+                    ,Air conditioning,Cable television ready or satellite
+                    ,On-site laundry facilities in each building
+                    ,Refreshing swimming pool and sundeck
+                    ,Corporate suites
+                    ,Sound entry system
+                    ,Dog & cat friendly
+                    ,Convenient direct payment option
+                    ,Prompt, professional on-site management
+                    ,24 Hour emergency maintenance
+                </p>
+            </div>
+
+            <div class="plan">
+                <figure>
+                    <img src="images/1Bdrsmall.jpg" width="500" alt="1b1b"/>
+                    <figcaption>1B1B</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/2-bedroom-apt.jpg" width="500" alt="2b1b"/>
+                    <figcaption>2B1B</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/3Bdrsmall.jpg" width="500" alt="3b1b"/>
+                    <figcaption>3B1B</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/studiosmall.jpg" width="500" alt="studio"/>
+                    <figcaption>studio</figcaption>
+                </figure>
+                <h3>
+                    *All prices are subject to change and availability.
+                </h3>
+            </div>
+
+            <div class="containerwhite">
+        
+                <h1>Rent Calculator</h1>
+                <p>Now you can calculate how much you should pay PERSONALY per month if you rent a 2B1B apartment or 3B2B apartment with others.</p>
+                <section class="room">
+                    <span>What kind of room would you like to rent?</span>
+                    <br>
+                    <select name="room" id="room">
+                        <option value=1100>Studio $1100</option>
+                        <option value=1250>1B1B $1250</option>
+                        <option value=750>one bedroom of 2B1B $1500</option>
+                        <option value=600>one bedroom of 3B1B $1800</option>
+                    </select>
+
+                  </section>
+                  <hr>
+                <section class="car">
+                  <span>Do you need a parking lot for your car?($50 parking fee)</span>
+                    <br>
+                    <input type="radio" name="car" id="yes" value=50>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="car" id="no" value=0>
+                    <label for="no">No</label>
+                </section>
+                <hr>
+                <section class="pet">
+                    <span>Do you have a pet?</span>
+                      <br>
+                      <label for="cat">How many cats do you have? ($20 per cat)</label>
+                        <select name="cat" id="cat">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                        </select>
+                        <br><label for="dog">How many dogs do you have?($30 per dog)</label>
+                        <select name="dog" id="dog">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                        </select>
+                  </section>
+                  <hr>
+                  <section class="service">
+                    <span>Would you like to use the service we provide?</span>
+                      <br>
+                      <p>Luckly, our rent covers water,electricity and heating.</p>
+                        <br><span>Wifi&TV service</span><br>
+                        <label>Bandwidth</label>: 10 Mbps
+                        <input type="range" id="wifi" min=10 max=50 value=30 step=10> 50 Mbps<br>
+                        <div>Wifi bandwidth is: <span id="wifivalue"></span><br><br></div>
+                  </section>
+                  <hr>
+                <button id="start">Start calculate my rent</button>
+                <h3 >Your rent is <span id="result"></span></h3>
+                <script src="js/cal.js"></script>
+            
+            </div>
+
+            <div class="containergreen">
+                <h2>Reviews</h2>
+                <p>
+                    William R.: The Island Drive Apartments are surrounded by gorgeous nature. It has a quiet tranquility that you won't find anywhere else in Ann Arbor. With all of the included utilities, the price is great…
+                <br>
+                Roberto M.: I'd urge prospective tenants to consider Island Drive Apartments. Its location is unparalleled within the neighborhood. It is only a few minutes away from the Medical School, and within walking…
+                <br>
+                Dr.A: Wonderful premise, excellent quality apartment with great staff. 
+                <br>
+                Tanvi S.: I would say the location, the nature, the cute sitting spots, the park, the spaciousness of the house, the economics of the house .... I love that we are close to both campuses and still enjoy a cheaper house rate. To be honest life is beautiful here, you might want to give it a shot! 
+            </p>
+            </div>
+
+
+        </main>
+
+        <aside>
+            <h3>Contact info</h3>
+            <ul>
+                <li>Address:1099 Maiden Lane, Ann Arbor, MI 48105</li>
+                <li>Phone: (734) 665-4331</li>
+                <li>Fax: (734) 665-2354</li>
+                <li>Email:
+                    leasing@islanddriveapts.com</li>
+                <li>On-Call Emergency Maintenance:(855) 447-5366</li>
+            </ul>
+            
+         </aside>
+    
+        <footer>
+            <p>
+                Copyright © 2016 Enterprise+. All rights reserved.
+            </p>
+        </footer>
+    </body>
+    </html>
+    
